@@ -1,4 +1,4 @@
-export interface RowData { 
+export interface IRowData { 
   rutTaker: string;
   numberReference: string;
   originDate: string;
@@ -7,10 +7,21 @@ export interface RowData {
   currency: string;
   amount: string;
   ticketStatus: string;
+  id?: number;
 }
 
-export interface TableState {
-  rows: RowData[];
+export interface ITableState {
+  rows: IRowData[];
+}
+
+export interface ITableContext{
+  tableState: ITableState;
+  dispatch: React.Dispatch<ITableActions>
+}
+
+export interface ITableActions {
+  type: "ADD_ROW" | "DELETE_ROW" | "EDIT_ROW";
+  payload?: IRowData;
 }
 
 
