@@ -1,4 +1,4 @@
-export interface IRowData { 
+export interface ITicket { 
   rutTaker: string;
   numberReference: string;
   originDate: string;
@@ -11,7 +11,7 @@ export interface IRowData {
 }
 
 export interface ITableState {
-  rows: IRowData[];
+  rows: ITicket[];
 }
 
 export interface ITableContext{
@@ -20,8 +20,8 @@ export interface ITableContext{
 }
 
 export interface ITableActions {
-  type: "ADD_ROW" | "DELETE_ROW" | "EDIT_ROW";
-  payload?: IRowData;
+  type: "ADD_ROW" | "DELETE_ROW" | "EDIT_ROW" | "GET_TICKETS";
+  payload?: ITicket;
 }
 
 

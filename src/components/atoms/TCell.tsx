@@ -10,3 +10,4 @@ const TCell = ({value}: ITCellProps) => {
 }
 
 export default TCell
+

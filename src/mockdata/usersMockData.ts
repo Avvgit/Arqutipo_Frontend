@@ -1,7 +1,7 @@
-import { IRowData } from "../interfaces/Interfaces";
+import { ITicket } from "../interfaces/Interfaces";
 
 
-const data: IRowData[] = [
+const data: ITicket[] = [
   {
     rutTaker: '76.727.343-7',
     numberReference: '110614',

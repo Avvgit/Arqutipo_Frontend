@@ -3,7 +3,7 @@ export interface ITHeadProps {
 }
 
 export interface ITCellProps {
-  value: string | number | boolean | JSX.Element;
+  value: string | number | boolean | JSX.Element | undefined | null;
 }
 
 export interface ITBodyProps {
